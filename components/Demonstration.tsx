@@ -27,15 +27,15 @@ export function Demonstration() {
 
         <div className="relative mx-auto mt-16 max-w-[560px]">
           <div
-            className="absolute bottom-0 left-[19px] top-0 w-[3px] bg-gradient-to-b from-[#4F46E5] to-[#7C3AED]"
+            className="pointer-events-none absolute bottom-[20px] left-[19px] top-[20px] w-[3px] bg-[linear-gradient(to_bottom,#4F46E5,#7C3AED)]"
             aria-hidden
           />
 
-          <ol className="relative list-none space-y-0 p-0">
+          <ol className="relative flex list-none flex-col gap-7 p-0">
             {demonstration.steps.map((label, index) => (
               <motion.li
                 key={label}
-                className="mb-7 flex items-center gap-5 last:mb-0"
+                className="flex items-center gap-5"
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{

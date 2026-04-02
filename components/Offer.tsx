@@ -28,13 +28,13 @@ export function Offer() {
         </p>
 
         <div className="relative mx-auto mt-16 max-w-[680px]">
-          <div className="gradient-border-top relative overflow-hidden rounded-[16px] border border-white/[0.08] bg-[#111116] p-10 transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_32px_rgba(79,70,229,0.15)]">
+          <div className="relative overflow-hidden rounded-[16px] border border-white/[0.08] bg-[#111116] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_32px_rgba(79,70,229,0.15)]">
             <div
               className="pointer-events-none absolute left-0 right-0 top-0 h-[200px] bg-[radial-gradient(ellipse_at_top,rgba(79,70,229,0.06),transparent)]"
               aria-hidden
             />
 
-            <div className="relative">
+            <div className="relative p-10">
               <h3 className="mb-3 text-[22px] font-bold text-[#F5F5F7]">
                 {offer.cardTitle}
               </h3>
@@ -65,7 +65,10 @@ export function Offer() {
 
               <Link
                 href="#final-cta"
-                className={`gradient-bg block w-full rounded-xl py-4 text-center text-[17px] font-semibold text-white transition hover:opacity-90 ${focusRing} ring-offset-base`}
+                className={`block w-full rounded-[12px] border-none py-4 text-center text-[17px] font-semibold text-white transition-opacity duration-200 ease-in-out hover:opacity-90 ${focusRing} ring-offset-base`}
+                style={{
+                  background: "linear-gradient(135deg, #4F46E5, #7C3AED)",
+                }}
               >
                 {offer.cta}
               </Link>

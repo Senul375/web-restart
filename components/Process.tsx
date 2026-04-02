@@ -17,7 +17,7 @@ export function Process() {
       className="bg-base py-[80px] md:py-[140px]"
       {...sectionMotion}
     >
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="mx-auto max-w-[1200px] px-6 pb-0">
         <h2 className="text-center text-[32px] font-bold tracking-[-0.01em] text-primary md:text-[44px]">
           {process.heading}
         </h2>
@@ -25,7 +25,7 @@ export function Process() {
           {process.intro}
         </p>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mb-0 mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {process.steps.map((step) => (
             <div
               key={step.num}

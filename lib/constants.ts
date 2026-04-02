@@ -125,9 +125,9 @@ export const offer = {
   heading: "Designed for Businesses Serious About Growth",
   intro:
     "Each system is custom-built based on your business structure and revenue goals.",
-  cardTitle: "Everything in one system",
+  cardTitle: "Custom Revenue System",
   cardBody:
-    "A single implementation that connects how you capture interest, respond, qualify, follow up, and convert—without the gaps that lose revenue.",
+    "End-to-end design and implementation of a tailored revenue system.",
   includesLabel: "Includes",
   includes: [
     "Lead capture",
