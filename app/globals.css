@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+.gradient-border-top {
+  position: relative;
+}
+
+.gradient-border-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #4f46e5, #7c3aed);
+  border-radius: 16px 16px 0 0;
+}
+
+.dot-grid {
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.06) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 32px 32px;
+}
